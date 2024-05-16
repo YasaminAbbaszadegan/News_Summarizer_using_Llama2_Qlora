@@ -6,6 +6,7 @@ This is a News Summarizer application built using Llama2 Qlora. It summarizes ne
 
 
 <img src="images/huggingface_card.png" width="400" />
+
 You can access the News Summarizer Model [here](https://huggingface.co/YasaminAbb/Llama-2-7b-CNN_Q_lora_Summarizer/tree/main).
 
 ## Access the Azure Deployed Streamlit App
