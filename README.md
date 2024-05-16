@@ -8,7 +8,7 @@ This is a News Summarizer application built using Llama2 Qlora. It summarizes ne
 <img src="images/huggingface_card.png" width="400" />
 You can access the News Summarizer Model [here](https://huggingface.co/YasaminAbb/Llama-2-7b-CNN_Q_lora_Summarizer/tree/main).
 
-## Access the App
+## Access the Azure Deployed Streamlit App
 
 You can access the News Summarizer app [here](https://newssummarizer.azurewebsites.net/).
 
@@ -24,6 +24,13 @@ You can access the News Summarizer app [here](https://newssummarizer.azurewebsit
 
 - Yasamin Abbaszadegan
 
-## License
+## model_api_inference
+### handler.py
 
+- A handler in Hugging Face helps manage API endpoints.
+- It acts like a middleman between incoming requests and the model.
+- When someone sends a request to the API, the handler processes it.
+- It sends the data to the model for prediction.
+- Then, it formats the model's response before sending it back.
+So, handlers are crucial for making sure the API works smoothly and interacts correctly with the deployed model.
 
