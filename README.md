@@ -21,20 +21,7 @@ You can access the News Summarizer app [here](https://newssummarizer.azurewebsit
   <img src="images/news_app_snap2.png" width="300" /> 
 </p>
 
-## Contributors
-
-- Yasamin Abbaszadegan
-
-## model_api_inference
-### handler.py
-
-- A handler in Hugging Face helps manage API endpoints.
-- It acts like a middleman between incoming requests and the model.
-- When someone sends a request to the API, the handler processes it.
-- It sends the data to the model for prediction.
-- Then, it formats the model's response before sending it back.
-So, handlers are crucial for making sure the API works smoothly and interacts correctly with the deployed model.
-
+## 
 🚨 **Instance Deactivation Notice** 🚨
 
 🔴 **Attention:** 
@@ -58,3 +45,18 @@ If you need to activate the instances or have any queries, please **reach out** 
 For any assistance, kindly send us a message or email us at [your contact email]. 
 
 Thank you for your understanding and cooperation! 🙏
+
+
+## Contributors
+
+- Yasamin Abbaszadegan
+
+## model_api_inference
+### handler.py
+
+- A handler in Hugging Face helps manage API endpoints.
+- It acts like a middleman between incoming requests and the model.
+- When someone sends a request to the API, the handler processes it.
+- It sends the data to the model for prediction.
+- Then, it formats the model's response before sending it back.
+So, handlers are crucial for making sure the API works smoothly and interacts correctly with the deployed model.
