@@ -12,15 +12,6 @@ You can access the News Summarizer Model [here](https://huggingface.co/YasaminAb
 ## Access the Azure Deployed Streamlit App
 
 You can access the News Summarizer app [here](https://newssummarizer.azurewebsites.net/).
-
-## Preview
-
-<img src="images/url_address.png" width="300" />
-<p float="left">
-  <img src="images/news_app_snap1.png" width="300" />
-  <img src="images/news_app_snap2.png" width="300" /> 
-</p>
-
 ## 
 🚨 **Instance Deactivation Notice** 🚨
 
@@ -37,6 +28,16 @@ To conserve resources and optimize performance, we've paused the instances.
 If you need to activate the instances or have any queries, please **reach out** to us. 
 
 Thank you for your understanding and cooperation! 🙏
+
+## Preview
+
+<img src="images/url_address.png" width="300" />
+<p float="left">
+  <img src="images/news_app_snap1.png" width="300" />
+  <img src="images/news_app_snap2.png" width="300" /> 
+</p>
+
+
 
 
 ## Contributors
