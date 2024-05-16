@@ -4,7 +4,8 @@ This is a News Summarizer application built using Llama2 Qlora. It summarizes ne
 
 ## Finetuned Huggingface Card
 
-![App Preview](images/huggingface_card.png)
+
+<img src="images/huggingface_card.png" width="400" />
 You can access the News Summarizer Model [here](https://huggingface.co/YasaminAbb/Llama-2-7b-CNN_Q_lora_Summarizer/tree/main).
 
 ## Access the App
