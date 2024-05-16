@@ -35,16 +35,18 @@
 
 
 
-
-API_URL = "https://ry8lw5hyfuiiv805.us-east-1.aws.endpoints.huggingface.cloud"
-API_TOKEN = "2gW0BQPEIHuZxNYGYZsmYNzRXXI_4hiDxccm7aMjMZPn8LLA6" 
-
 import streamlit as st
 import pandas as pd
 import requests
 import locale
 from statistics import mean
 from evaluate import load
+
+
+
+
+API_URL = "https://ry8lw5hyfuiiv805.us-east-1.aws.endpoints.huggingface.cloud"
+API_TOKEN = "2gW0BQPEIHuZxNYGYZsmYNzRXXI_4hiDxccm7aMjMZPn8LLA6" 
 
 # Load your dataframe
 data = pd.read_csv('sample_news.csv')
@@ -58,31 +60,6 @@ def summarize_text(text):
     payload = {"inputs": text.strip()}
     response = requests.post(API_URL, json=payload, headers=headers)
     return response.json()
-
-def calc_rouges(rouge_scores, rouge_type):
-    rouge_h = rouge_scores[rouge_type].high.fmeasure
-    rouge_m = rouge_scores[rouge_type].mid.fmeasure
-    rouge_l = rouge_scores[rouge_type].low.fmeasure
-    return mean([rouge_h, rouge_m, rouge_l])
-
-def evaluate_summary(candidate, reference, bleu_metric, rouge_metric, bertscore_metric):
-    # Compute BLEU score
-    bleu_scores = bleu_metric.compute(predictions=[candidate], references=[reference])
-    bleu = bleu_scores['precisions'][0]
-
-    # Compute ROUGE score
-    rouge_scores = rouge_metric.compute(predictions=[candidate], references=[reference])
-    rouge1 = calc_rouges(rouge_scores, 'rouge1')
-    rouge2 = calc_rouges(rouge_scores, 'rouge2')
-    rougeL = calc_rouges(rouge_scores, 'rougeL')
-
-    # Compute BERTScore
-    bertscore_results = bertscore_metric.compute(predictions=[candidate], references=[reference], lang="en")
-    b_prec = mean(bertscore_results['precision'])
-    b_rec = mean(bertscore_results['recall'])
-    b_f1 = mean(bertscore_results['f1'])
-
-    return bleu, rouge1, rouge2, rougeL, b_prec, b_rec, b_f1
 
 def main():
     st.title("Text Summarization App")
@@ -122,20 +99,8 @@ def main():
             # Display the human summary
             st.subheader("Human Summary")
             st.markdown(f"```\n{human_summary}\n```")
-            # Load metrics after the checkbox is checked
-            bleu_metric = load('bleu')
-            rouge_metric = load('rouge')
-            bertscore_metric = load('bertscore')
-            
-            # Calculate and display metrics
-            bleu, rouge1, rouge2, rougeL, b_prec, b_rec, b_f1 = evaluate_summary(summary, human_summary, bleu_metric, rouge_metric, bertscore_metric)
-            st.metric("BLEU Score", f"{bleu:.2f}")
-            st.metric("ROUGE-1 Score", f"{rouge1:.2f}")
-            st.metric("ROUGE-2 Score", f"{rouge2:.2f}")
-            st.metric("ROUGE-L Score", f"{rougeL:.2f}")
-            st.metric("BERT Precision", f"{b_prec:.2f}")
-            st.metric("BERT Recall", f"{b_rec:.2f}")
-            st.metric("BERT F1 Score", f"{b_f1:.2f}")
 
 if __name__ == "__main__":
     main()
+
+
