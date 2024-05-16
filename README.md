@@ -35,3 +35,26 @@ You can access the News Summarizer app [here](https://newssummarizer.azurewebsit
 - Then, it formats the model's response before sending it back.
 So, handlers are crucial for making sure the API works smoothly and interacts correctly with the deployed model.
 
+🚨 **Instance Deactivation Notice** 🚨
+
+🔴 **Attention:** 
+
+The instances for the app have been **deactivated temporarily**. 
+
+⚠️ **What does this mean?** 
+
+Access to the application is currently **unavailable**. 
+
+🔒 **Why?**
+
+To conserve resources and optimize performance, we've paused the instances. 
+
+🔓 **What should I do?**
+
+If you need to activate the instances or have any queries, please **reach out** to us. 
+
+📧 **Contact:**
+
+For any assistance, kindly send us a message or email us at [your contact email]. 
+
+Thank you for your understanding and cooperation! 🙏
