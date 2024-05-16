@@ -1,8 +1,8 @@
 import streamlit as st
 import requests
 
-API_URL = "https://ry8lw5hyfuiiv805.us-east-1.aws.endpoints.huggingface.cloud"
-API_TOKEN = "2gW0BQPEIHuZxNYGYZsmYNzRXXI_4hiDxccm7aMjMZPn8LLA6"
+API_URL = ""
+API_TOKEN = ""
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
 def summarize_text(text):
