@@ -47,7 +47,12 @@
 
 import streamlit as st
 import requests
-
+import pandas as pd
+# Load your dataframe
+data = pd.read_csv('sample_news.csv')
+API_URL = "https://ry8lw5hyfuiiv805.us-east-1.aws.endpoints.huggingface.cloud"
+API_TOKEN = "2gW0BQPEIHuZxNYGYZsmYNzRXXI_4hiDxccm7aMjMZPn8LLA6" 
+headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
 def summarize_text(text):
     payload = {"inputs": text.strip()}
