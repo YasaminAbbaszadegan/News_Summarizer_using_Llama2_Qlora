@@ -1,2 +1,4 @@
+evaluate==0.4.2
+pandas==2.2.2
 Requests==2.31.0
 streamlit==1.32.0
