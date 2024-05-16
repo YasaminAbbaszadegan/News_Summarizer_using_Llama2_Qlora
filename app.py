@@ -38,9 +38,9 @@
 import streamlit as st
 import pandas as pd
 import requests
-import locale
-from statistics import mean
-from evaluate import load
+# import locale
+# from statistics import mean
+# from evaluate import load
 
 
 
@@ -54,7 +54,7 @@ data = pd.read_csv('sample_news.csv')
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
-locale.getpreferredencoding = lambda: "UTF-8"
+# locale.getpreferredencoding = lambda: "UTF-8"
 
 def summarize_text(text):
     payload = {"inputs": text.strip()}
