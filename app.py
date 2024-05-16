@@ -32,25 +32,10 @@ def main():
         st.markdown(f"```\n{summary}\n```")
 if __name__ == "__main__":
     main()
-import streamlit as st
-import pandas as pd
-import requests
-
-# Load your dataframe
-data = pd.read_csv('sample_news.csv')
-API_URL = "https://ry8lw5hyfuiiv805.us-east-1.aws.endpoints.huggingface.cloud"
-API_TOKEN = "2gW0BQPEIHuZxNYGYZsmYNzRXXI_4hiDxccm7aMjMZPn8LLA6" 
-headers = {"Authorization": f"Bearer {API_TOKEN}"}
-
-def summarize_text(text):
-    payload = {"inputs": text.strip()}
-    response = requests.post(API_URL, json=payload, headers=headers)
-    return response.json()
-
-
 # import streamlit as st
-# import requests
 # import pandas as pd
+# import requests
+
 # # Load your dataframe
 # data = pd.read_csv('sample_news.csv')
 # API_URL = "https://ry8lw5hyfuiiv805.us-east-1.aws.endpoints.huggingface.cloud"
