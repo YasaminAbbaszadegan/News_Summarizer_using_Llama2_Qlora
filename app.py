@@ -47,6 +47,12 @@
 
 import streamlit as st
 import requests
+
+
+def summarize_text(text):
+    payload = {"inputs": text.strip()}
+    response = requests.post(API_URL, json=payload, headers=headers)
+    return response.json()
 def main():
     st.title("Text Summarization App")
     
