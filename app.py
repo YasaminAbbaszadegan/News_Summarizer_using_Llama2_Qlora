@@ -21,7 +21,7 @@ def summarize_text(text):
     return response.json()
 
 def main():
-    st.title("News Summarization Genertor 📰 🗞️ ")
+    st.title("News Summarization Generator 📰 🗞️ ")
     
     # Option to select from dataframe
     use_dataframe = st.checkbox("Use dialogue from dataframe")
