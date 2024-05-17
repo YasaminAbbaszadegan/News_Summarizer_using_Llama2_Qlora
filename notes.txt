@@ -1,8 +1,0 @@
-https://ui.endpoints.huggingface.co/YasaminAbb/endpoints
-https://www.youtube.com/watch?v=2toRzAYT8yo&list=PLel_oaMUBhsHopbUZWKdrW_1NfCs8UJD8&index=187
-https://newssummarizer.azurewebsites.net/
-pipreqs
-pip freeze | grep streamlit >> requirement.txt
-Configuration-->Startup Command
-python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0
-
