@@ -48,6 +48,16 @@ If you need to activate the instances or have any queries, please **reach out** 
 
 Thank you for your understanding and cooperation! 🙏
 
+## Deployment Diagrams
+
+<p float="left">
+  <img src="images/HF_endpoint.png" width="300" />
+  <img src="images/overall_deployment.png" width="500" /> 
+</p>
+
+
+
+
 ## Endpoint Resource Specifications
 
 ### Hugging Face API and AWS Endpoint for Model Inference
@@ -80,6 +90,7 @@ This setup provides a reliable and cost-effective way to host the Streamlit UI.
 * **GPU**: Nvidia L4
 * **Number of GPUs**: 1
 * **Memory**: 24GB of VRAM!
+
 
 ## model_api_inference
 ### handler.py
