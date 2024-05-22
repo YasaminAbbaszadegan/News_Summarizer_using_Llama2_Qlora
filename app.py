@@ -3,11 +3,10 @@ import streamlit as st
 import pandas as pd
 import requests
 
-# API_URL = ""
-# API_TOKEN = ""
+API_URL = ""
+API_TOKEN = ""
 
-API_URL = "https://ry8lw5hyfuiiv805.us-east-1.aws.endpoints.huggingface.cloud"
-API_TOKEN = "2gW0BQPEIHuZxNYGYZsmYNzRXXI_4hiDxccm7aMjMZPn8LLA6" 
+
 
 # Load your dataframe
 data = pd.read_csv('sample_news.csv')
@@ -15,11 +14,12 @@ data = pd.read_csv('sample_news.csv')
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
-# locale.getpreferredencoding = lambda: "UTF-8"
-
 def summarize_text(text):
+    # Create a payload dictionary with the input text
     payload = {"inputs": text.strip()}
+    # Send a POST request to the API endpoint with the payload
     response = requests.post(API_URL, json=payload, headers=headers)
+    # Return the JSON response from the API as a Python dictionary
     return response.json()
 
 def main():
