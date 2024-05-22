@@ -59,7 +59,7 @@ class EndpointHandler:
         # Prepare input prompt for summarization
         prompt = f"""
         ### Instruction:
-        Summarize the following conversation.
+        Summarize the following News Article.
         ​
         ### Input:
         {prompt}
