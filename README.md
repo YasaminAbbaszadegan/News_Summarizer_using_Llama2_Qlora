@@ -50,7 +50,7 @@ Thank you for your understanding and cooperation! 🙏
 
 ## Deployment Diagrams
 
-<img src="images/deployment_diagram.png" width="300" />
+<img src="images/deployment_diagram.png" width="600" />
 
 ## Endpoint Resource Specifications
 
