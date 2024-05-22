@@ -1,6 +1,30 @@
-# News Summarizer using Llama2 Qlora
+# News Summarizer Application
 
-This is a News Summarizer application built using Llama2 Qlora. It summarizes news articles to provide concise and informative summaries.
+This is a News Summarizer application built using Llama2 QLoRA. It summarizes news articles to provide concise and informative summaries.
+
+## Features
+
+- **Fine-Tuned LLMs (LLaMA2):** The model has been fine-tuned on a news dataset, optimizing computational resources by training with only 20% of the original parameters using QLoRA. This approach achieves an impressive 80% average BERTScore, ensuring high-quality summaries.
+  
+- **Deployment:** The fine-tuned LLM model is deployed using HuggingFace Inference Endpoint REST APIs. Additionally, a user-friendly interface has been developed using Streamlit, enhancing user interaction and accessibility.
+
+- **Automated MLOps Workflow:** The application leverages Azure Web Apps and GitHub to automate the MLOps workflow. This setup streamlines the CI/CD pipeline, ensuring efficient model deployment and continuous monitoring.
+## Key Benefits
+
+- **Resource Efficiency:** By using QLoRA, the application significantly reduces the computational resources required for training, making it more efficient and cost-effective.
+  
+- **High-Quality Summaries:** The model's performance, as measured by BERTScore, ensures that the summaries are both concise and informative, providing users with essential information quickly.
+
+- **Seamless Deployment and Monitoring:** The integration with Azure Web Apps and GitHub ensures that the model can be deployed seamlessly and monitored continuously, minimizing downtime and maintaining performance.
+## How It Works
+
+1. **Model Training:** The LLaMA2 model is fine-tuned on a news dataset using QLoRA, which reduces the number of parameters to 20% of the original, optimizing for both performance and resource usage.
+
+2. **Deployment:** The trained model is deployed using HuggingFace Inference Endpoint REST APIs. This allows the model to be accessed via a RESTful API, making it easy to integrate with other applications.
+
+3. **User Interface:** A Streamlit application provides a simple and interactive interface for users to input news articles and receive summaries. This enhances accessibility and user experience.
+
+4. **Automated Workflow:** The use of Azure Web Apps and GitHub automates the deployment process. Continuous integration and continuous deployment (CI/CD) pipelines ensure that updates to the model or application are automatically deployed and monitored.
 
 ## Finetuned Huggingface Card
 
