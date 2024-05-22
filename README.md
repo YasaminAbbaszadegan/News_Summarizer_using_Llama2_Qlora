@@ -39,25 +39,25 @@ If you need to activate the instances or have any queries, please **reach out** 
 
 Thank you for your understanding and cooperation! 🙏
 
-## Endpoint Specifications
+## Endpoint Resource Specifications
 
 ### Hugging Face API and AWS Endpoint for Model Inference
 
 This repository uses the Hugging Face API and an AWS endpoint for model inference. The API is deployed on an AWS instance with the following specifications:
 
-#### Hardware Specifications
+####  🎮 / 🧠  Hardware Specifications
 
-* **GPU**: Nvidia T4
-* **Number of GPUs**: 1
+* **GPU**: Nvidia T4 ($0.5 USD/Hour)
+* **Number of GPUs**: 1 
 * **Memory**: 16 GB
 
 This setup enables fast and efficient model inference.
 
-### Azure Endpoint for Streamlit UI
+###  Azure Endpoint for Streamlit UI
 
 The Streamlit UI is hosted on an Azure endpoint with the following specifications:
 
-#### Pricing and Hardware Specifications
+#### 🎮 / 🧠  Hardware Specifications
 
 * **Pricing**: Basic B1 ($13.14 USD/Month)
 * **ACU**: 100
@@ -66,7 +66,11 @@ The Streamlit UI is hosted on an Azure endpoint with the following specification
 
 This setup provides a reliable and cost-effective way to host the Streamlit UI.
 
-
+## Finetuning Colab Resource Specifications
+#### 🎮 / 🧠  Hardware Specifications
+* **GPU**: Nvidia L4
+* **Number of GPUs**: 1
+* **Memory**: 24GB of VRAM!
 
 ## model_api_inference
 ### handler.py
