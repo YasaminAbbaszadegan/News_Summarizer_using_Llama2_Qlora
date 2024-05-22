@@ -110,6 +110,16 @@ This setup provides a reliable and cost-effective way to host the Streamlit UI.
 So, handlers are crucial for making sure the API works smoothly and interacts correctly with the deployed model.
 
 
+## Reference Resources
+### Optimizing LLMs
+[Optimizing LLMs: A Step-by-Step Guide to Fine-Tuning with PEFT and QLoRa](https://medium.com/etoai/optimizing-llms-a-step-by-step-guide-to-fine-tuning-with-peft-and-qlora-22eddd13d25b![image](https://github.com/YasaminAbbaszadegan/News_Summarizer_using_Llama2_Qlora/assets/51804165/998ddf0b-ef07-488d-971c-b8a9c8d85960)
+)
+### Deploy LLM to Production
+[Deploy LLM to Production with HuggingFace Inference Endpoints](https://www.mlexpert.io/blog/deploy-llm-to-production#merge-qlora-adapter-with-base-model![image](https://github.com/YasaminAbbaszadegan/News_Summarizer_using_Llama2_Qlora/assets/51804165/459fdd51-2f6b-4b3c-9314-2a018a34fdcb)
+)
+Let me know if you have any other requests!
+
+
 
 ## Contributors
 
