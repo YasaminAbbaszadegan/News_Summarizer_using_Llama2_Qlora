@@ -34,7 +34,7 @@ Thank you for your understanding and cooperation! 🙏
 <img src="images/url_address.png" width="300" />
 <p float="left">
   <img src="images/news_app_snap1.png" width="300" />
-  <img src="images/news_app_snap2.png" width="300" /> 
+  <img src="images/news_app_snap2.png" width="500" /> 
 </p>
 
 
