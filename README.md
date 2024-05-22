@@ -32,10 +32,13 @@ The instances for the app have been **deactivated temporarily**.
 ⚠️ **What does this mean?** 
 
 Access to the application is currently **unavailable**. 
+
 🔒 **Why?**
+
 To conserve resources and optimize performance, we've paused the instances. 
+
 🔓 **What should I do?**
-If you need to activate the instances or have any queries, please **reach out** to us. 
+If you need to activate the instances or have any queries, please **reach out** to me. 
 
 Thank you for your understanding and cooperation! 🙏
 
