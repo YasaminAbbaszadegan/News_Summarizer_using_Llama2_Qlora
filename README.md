@@ -51,7 +51,7 @@ Thank you for your understanding and cooperation! 🙏
 ## Deployment Diagrams
 
 <p float="left">
-  <img src="images/HF_endpoint.png" width="300" />
+  <img src="images/HF_endpoint.png" width="500" />
   <img src="images/overall_deployment.png" width="500" /> 
 </p>
 
