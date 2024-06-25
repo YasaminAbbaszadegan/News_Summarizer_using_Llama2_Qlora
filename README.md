@@ -50,6 +50,23 @@ Thank you for your understanding and cooperation! 🙏
 
 ## Deployment Diagrams
 
+
+**Hugging Face Inference Endpoints**: These are services provided by Hugging Face to deploy machine learning models from their model repository. 
+                                      The endpoints allow for easy and secure deployment of various types of models.
+
+**Image Artifacts**: When an Inference Endpoint is created, Hugging Face generates image artifacts. 
+                These are Docker container images that encapsulate everything needed to run the model, including the model itself, dependencies, and any required configurations.
+
+**Decoupling for Security and Reliability**: The image artifacts are separate from the source repositories on the Hugging Face Hub. 
+                                          This separation ensures that the deployed model is secure and reliable, as it runs in a controlled, isolated environment.
+
+**Custom Container Images**: Users have the flexibility to use custom container images. 
+                        These can be managed on external services like Docker Hub, AWS Elastic Container Registry (ECR), Azure Container Registry (ACR), or Google Container Registry (GCR). 
+                        This allows users to bring their own pre-built container images with specific configurations or dependencies required for their applications.
+
+In summary, "image" in this context refers to Docker container images used to package and deploy machine learning models in a secure, reliable, and scalable manner.
+
+
 <img src="images/deployment_diagram.png" width="600" />
 
 ## Endpoint Resource Specifications
